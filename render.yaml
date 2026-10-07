@@ -1,0 +1,25 @@
+services:
+  - type: web
+    name: jumble-backend
+    runtime: python
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT --workers 1
+    healthCheckPath: /health
+    envVars:
+      - key: ENVIRONMENT
+        value: production
+      - key: AUTO_MIGRATE
+        value: "true"
+      - key: PLAYER_COOKIE_SAMESITE
+        value: none
+      - key: FRONTEND_URL
+        value: https://jumble-game-sooty.vercel.app
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_SERVICE_ROLE_KEY
+        sync: false
+      - key: SUPABASE_ANON_KEY
+        sync: false
+      - key: DATABASE_URL
+        sync: false

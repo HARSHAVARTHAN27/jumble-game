@@ -357,3 +357,17 @@ def test_waiting_presence_deduplicates_and_expires():
     now[0] = 40
     assert presence.snapshot() == {}
 
+
+def test_production_cross_site_player_cookie_is_secure_and_renewed(client, monkeypatch):
+    from app.config import settings
+    monkeypatch.setattr(settings, 'ENVIRONMENT', 'production')
+    monkeypatch.setattr(settings, 'PLAYER_COOKIE_SAMESITE', 'none')
+    response = client.post('https://testserver/api/player/join', json={'name': 'EMP001'})
+    assert response.status_code == 200
+    cookie = response.headers['set-cookie']
+    assert 'SameSite=none' in cookie and 'Secure' in cookie and 'HttpOnly' in cookie
+    data = response.json()['data']
+    restored = client.get('https://testserver/api/player/state', params={'player_id': data['player']['id'], 'game_id': data['game']['id']})
+    assert restored.status_code == 200
+    assert 'SameSite=none' in restored.headers['set-cookie'] and 'Secure' in restored.headers['set-cookie']
+

@@ -14,7 +14,7 @@ def join_player(request: PlayerJoinRequest, response: Response):
     data = service.join_player(request.name, request.employee_code)
     response.set_cookie("jumble_player", player_session(data["player"]["id"], data["game"]["id"]),
                         httponly=True, secure=settings.ENVIRONMENT != "development",
-                        samesite="lax", max_age=86400, path="/api/player")
+                        samesite=settings.PLAYER_COOKIE_SAMESITE, max_age=86400, path="/api/player")
     return {"success": True, "data": data, "error": None}
 
 
@@ -26,5 +26,5 @@ def get_player_state(request: Request, response: Response, player_id: str, game_
     # the host opens a lobby. Retries restore the unique membership.
     response.set_cookie("jumble_player", player_session(data["player"]["id"], data["player"]["gameId"]),
                         httponly=True, secure=settings.ENVIRONMENT != "development",
-                        samesite="lax", max_age=86400, path="/api/player")
+                        samesite=settings.PLAYER_COOKIE_SAMESITE, max_age=86400, path="/api/player")
     return {"success": True, "data": data, "error": None}
