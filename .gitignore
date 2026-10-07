@@ -1,0 +1,11 @@
+node_modules/
+dist/
+*.tsbuildinfo
+.env
+.env.local
+test-artifacts/
+__pycache__/
+.test-deps/
+.pytest_cache/
+.pytest-bank-*/
+docs/question-bank-source/

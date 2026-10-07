@@ -1,0 +1,11 @@
+fastapi
+uvicorn[standard]
+supabase
+psycopg[binary]>=3.2,<4
+python-dotenv
+pydantic
+pydantic-settings
+python-multipart
+httpx
+pytest
+pytest-asyncio

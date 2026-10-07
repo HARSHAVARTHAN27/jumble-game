@@ -1,0 +1,41 @@
+{
+  "name": "jumble-frontend",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "demo": "node scripts/demo.mjs",
+    "build": "tsc -b && vite build",
+    "typecheck": "tsc -b",
+    "preview": "vite preview --host 0.0.0.0",
+    "test": "vitest run",
+    "test:browser": "node scripts/browser-check.cjs",
+    "test:gameplay": "node scripts/gameplay-browser-check.cjs",
+    "test:splash": "node scripts/splash-browser-check.cjs",
+    "test:host-auth": "node scripts/host-auth-browser-check.cjs"
+  },
+  "dependencies": {
+    "@fontsource-variable/dm-sans": "^5.3.0",
+    "@fontsource-variable/outfit": "^5.3.0",
+    "@supabase/supabase-js": "^2.57.4",
+    "@tailwindcss/vite": "^4.1.13",
+    "canvas-confetti": "^1.9.3",
+    "framer-motion": "^12.23.22",
+    "lucide-react": "^0.468.0",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "react-router-dom": "^7.9.1",
+    "tailwindcss": "^4.1.13"
+  },
+  "devDependencies": {
+    "@types/canvas-confetti": "^1.9.0",
+    "@types/react": "^19.1.13",
+    "@types/react-dom": "^19.1.9",
+    "@vitejs/plugin-react": "^5.0.3",
+    "playwright": "^1.62.1",
+    "typescript": "~5.9.2",
+    "vite": "^7.1.7",
+    "vitest": "^5.0.3"
+  }
+}

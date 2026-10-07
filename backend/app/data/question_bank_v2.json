@@ -1,0 +1,1023 @@
+{
+  "version": 0,
+  "rounds": [
+    {
+      "gameType": "memory",
+      "questions": [
+        {
+          "id": "r1-demo",
+          "prompt": "Which tool was directly below Calendar AND directly right of Documents?",
+          "answerType": "text",
+          "options": [],
+          "acceptedAnswers": [
+            "Tasks"
+          ],
+          "data": {
+            "image": "/images/questions/memory-demo.png"
+          },
+          "hard": false,
+          "isDemo": true,
+          "memoryTime": 10,
+          "answerTime": 30,
+          "scoringRule": "bank-v2",
+          "lockAfterAttempt": true,
+          "instructions": "Practice only: try the interaction, then continue to Question 1. Memorize the visual without screenshots or notes. It will disappear before the question appears. Submit one team answer; include every requested detail."
+        },
+        {
+          "id": "r1-q1",
+          "prompt": "Name BOTH components: the one directly below Auth and the one immediately left of Queue.",
+          "answerType": "text",
+          "options": [],
+          "acceptedAnswers": [
+            "Cache AND Database",
+            "Cache and Database",
+            "Cache, Database",
+            "Cache & Database"
+          ],
+          "data": {
+            "image": "/images/questions/memory-q1.png"
+          },
+          "hard": false,
+          "isDemo": false,
+          "memoryTime": 12,
+          "answerTime": 30,
+          "scoringRule": "bank-v2",
+          "lockAfterAttempt": true,
+          "instructions": " Memorize the visual without screenshots or notes. It will disappear before the question appears. Submit one team answer; include every requested detail."
+        },
+        {
+          "id": "r1-q2",
+          "prompt": "Which service was the P1 incident in the middle row, AND who owned the P2 incident in the bottom-middle card?",
+          "answerType": "text",
+          "options": [],
+          "acceptedAnswers": [
+            "Inventory AND HR",
+            "Inventory and HR",
+            "Inventory, HR",
+            "Inventory & HR"
+          ],
+          "data": {
+            "image": "/images/questions/memory-q2.png"
+          },
+          "hard": false,
+          "isDemo": false,
+          "memoryTime": 12,
+          "answerTime": 30,
+          "scoringRule": "bank-v2",
+          "lockAfterAttempt": true,
+          "instructions": " Memorize the visual without screenshots or notes. It will disappear before the question appears. Submit one team answer; include every requested detail."
+        },
+        {
+          "id": "r1-q3",
+          "prompt": "Which control was directly below VPN, AND which control was diagonally down-right from it?",
+          "answerType": "text",
+          "options": [],
+          "acceptedAnswers": [
+            "DLP AND PAM",
+            "DLP and PAM",
+            "DLP, PAM",
+            "DLP & PAM"
+          ],
+          "data": {
+            "image": "/images/questions/memory-q3.png"
+          },
+          "hard": false,
+          "isDemo": false,
+          "memoryTime": 12,
+          "answerTime": 30,
+          "scoringRule": "bank-v2",
+          "lockAfterAttempt": true,
+          "instructions": " Memorize the visual without screenshots or notes. It will disappear before the question appears. Submit one team answer; include every requested detail."
+        },
+        {
+          "id": "r1-q4",
+          "prompt": "What was the status of Cache Tune, AND which top-row task was due Friday?",
+          "answerType": "text",
+          "options": [],
+          "acceptedAnswers": [
+            "In Progress AND DB Index",
+            "In Progress and DB Index",
+            "In Progress, DB Index",
+            "In Progress & DB Index"
+          ],
+          "data": {
+            "image": "/images/questions/memory-q4.png"
+          },
+          "hard": false,
+          "isDemo": false,
+          "memoryTime": 15,
+          "answerTime": 30,
+          "scoringRule": "bank-v2",
+          "lockAfterAttempt": true,
+          "instructions": " Memorize the visual without screenshots or notes. It will disappear before the question appears. Submit one team answer; include every requested detail."
+        },
+        {
+          "id": "r1-q5",
+          "prompt": "Which component was directly below CDN, AND what component sat immediately right of Queue?",
+          "answerType": "text",
+          "options": [],
+          "acceptedAnswers": [
+            "Service A AND Database",
+            "Service A and Database",
+            "Service A, Database",
+            "Service A & Database"
+          ],
+          "data": {
+            "image": "/images/questions/memory-q5.png"
+          },
+          "hard": false,
+          "isDemo": false,
+          "memoryTime": 15,
+          "answerTime": 30,
+          "scoringRule": "bank-v2",
+          "lockAfterAttempt": true,
+          "instructions": " Memorize the visual without screenshots or notes. It will disappear before the question appears. Submit one team answer; include every requested detail."
+        },
+        {
+          "id": "r1-q6",
+          "prompt": "Recall ALL THREE health values: Database, Backup and Inventory.",
+          "answerType": "text",
+          "options": [],
+          "acceptedAnswers": [
+            "Database 84% • Backup 100% • Inventory 79%",
+            "Database 84%, Backup 100%, Inventory 79%",
+            "84%, 100%, 79%",
+            "84 100 79"
+          ],
+          "data": {
+            "image": "/images/questions/memory-q6.png"
+          },
+          "hard": false,
+          "isDemo": false,
+          "memoryTime": 18,
+          "answerTime": 30,
+          "scoringRule": "bank-v2",
+          "lockAfterAttempt": true,
+          "instructions": " Memorize the visual without screenshots or notes. It will disappear before the question appears. Submit one team answer; include every requested detail."
+        }
+      ]
+    },
+    {
+      "gameType": "emoji",
+      "questions": [
+        {
+          "id": "r2-demo",
+          "prompt": "Decode the technology concept.",
+          "answerType": "text",
+          "options": [],
+          "acceptedAnswers": [
+            "Cloud Storage"
+          ],
+          "data": {
+            "image": "/images/questions/emoji-demo.png"
+          },
+          "hard": false,
+          "isDemo": true,
+          "memoryTime": 10,
+          "answerTime": 20,
+          "scoringRule": "bank-v2",
+          "lockAfterAttempt": false,
+          "instructions": "Practice only: try the interaction, then continue to Question 1. Decode the technology or workplace concept and type your answer."
+        },
+        {
+          "id": "r2-q1",
+          "prompt": "Decode the security concept.",
+          "answerType": "text",
+          "options": [],
+          "acceptedAnswers": [
+            "Two-Factor Authentication (2FA)",
+            "Two-Factor Authentication",
+            "Two Factor Authentication",
+            "2FA"
+          ],
+          "data": {
+            "image": "/images/questions/emoji-q1.png"
+          },
+          "hard": false,
+          "isDemo": false,
+          "memoryTime": 10,
+          "answerTime": 20,
+          "scoringRule": "bank-v2",
+          "lockAfterAttempt": false,
+          "instructions": " Decode the technology or workplace concept and type your answer."
+        },
+        {
+          "id": "r2-q2",
+          "prompt": "Decode the cybersecurity threat.",
+          "answerType": "text",
+          "options": [],
+          "acceptedAnswers": [
+            "Phishing Attack / Phishing Email",
+            "Phishing Attack",
+            "Phishing Email",
+            "Phishing"
+          ],
+          "data": {
+            "image": "/images/questions/emoji-q2.png"
+          },
+          "hard": false,
+          "isDemo": false,
+          "memoryTime": 10,
+          "answerTime": 20,
+          "scoringRule": "bank-v2",
+          "lockAfterAttempt": false,
+          "instructions": " Decode the technology or workplace concept and type your answer."
+        },
+        {
+          "id": "r2-q3",
+          "prompt": "Decode the software-development activity.",
+          "answerType": "text",
+          "options": [],
+          "acceptedAnswers": [
+            "Debugging"
+          ],
+          "data": {
+            "image": "/images/questions/emoji-q3.png"
+          },
+          "hard": false,
+          "isDemo": false,
+          "memoryTime": 10,
+          "answerTime": 20,
+          "scoringRule": "bank-v2",
+          "lockAfterAttempt": false,
+          "instructions": " Decode the technology or workplace concept and type your answer."
+        },
+        {
+          "id": "r2-q4",
+          "prompt": "Decode the network-security concept.",
+          "answerType": "text",
+          "options": [],
+          "acceptedAnswers": [
+            "Firewall"
+          ],
+          "data": {
+            "image": "/images/questions/emoji-q4.png"
+          },
+          "hard": false,
+          "isDemo": false,
+          "memoryTime": 10,
+          "answerTime": 20,
+          "scoringRule": "bank-v2",
+          "lockAfterAttempt": false,
+          "instructions": " Decode the technology or workplace concept and type your answer."
+        },
+        {
+          "id": "r2-q5",
+          "prompt": "Decode the security model.",
+          "answerType": "text",
+          "options": [],
+          "acceptedAnswers": [
+            "Zero Trust Security / Zero Trust",
+            "Zero Trust Security",
+            "Zero Trust"
+          ],
+          "data": {
+            "image": "/images/questions/emoji-q5.png"
+          },
+          "hard": false,
+          "isDemo": false,
+          "memoryTime": 10,
+          "answerTime": 20,
+          "scoringRule": "bank-v2",
+          "lockAfterAttempt": false,
+          "instructions": " Decode the technology or workplace concept and type your answer."
+        },
+        {
+          "id": "r2-q6",
+          "prompt": "Decode the software-delivery practice.",
+          "answerType": "text",
+          "options": [],
+          "acceptedAnswers": [
+            "CI/CD Pipeline / Continuous Integration and Continuous Deployment",
+            "CI/CD Pipeline",
+            "Continuous Integration and Continuous Deployment",
+            "CI/CD"
+          ],
+          "data": {
+            "image": "/images/questions/emoji-q6.png"
+          },
+          "hard": false,
+          "isDemo": false,
+          "memoryTime": 10,
+          "answerTime": 20,
+          "scoringRule": "bank-v2",
+          "lockAfterAttempt": false,
+          "instructions": " Decode the technology or workplace concept and type your answer."
+        }
+      ]
+    },
+    {
+      "gameType": "connection",
+      "questions": [
+        {
+          "id": "r3-demo",
+          "prompt": "What connects all four clues?",
+          "answerType": "text",
+          "options": [],
+          "acceptedAnswers": [
+            "Google products / services",
+            "Google products",
+            "services",
+            "Google services",
+            "Google"
+          ],
+          "data": {
+            "clues": [
+              "Gmail",
+              "Maps",
+              "Drive",
+              "YouTube"
+            ]
+          },
+          "hard": false,
+          "isDemo": true,
+          "memoryTime": 10,
+          "answerTime": 30,
+          "scoringRule": "bank-v2",
+          "lockAfterAttempt": false,
+          "instructions": "Practice only: try the interaction, then continue to Question 1. Clues arrive one at a time. Earlier correct answers earn 40 / 30 / 20 / 10 points. Existing retry rules apply."
+        },
+        {
+          "id": "r3-q1",
+          "prompt": "What connects all four clues?",
+          "answerType": "text",
+          "options": [],
+          "acceptedAnswers": [
+            "They all have keys",
+            "Keys",
+            "They have keys"
+          ],
+          "data": {
+            "clues": [
+              "Keyboard",
+              "Piano",
+              "Typewriter",
+              "Calculator"
+            ]
+          },
+          "hard": false,
+          "isDemo": false,
+          "memoryTime": 10,
+          "answerTime": 30,
+          "scoringRule": "bank-v2",
+          "lockAfterAttempt": false,
+          "instructions": " Clues arrive one at a time. Earlier correct answers earn 40 / 30 / 20 / 10 points. Existing retry rules apply."
+        },
+        {
+          "id": "r3-q2",
+          "prompt": "What connects all four clues?",
+          "answerType": "text",
+          "options": [],
+          "acceptedAnswers": [
+            "NASA human-spaceflight programs / programs",
+            "NASA human-spaceflight programs",
+            "programs",
+            "NASA programs"
+          ],
+          "data": {
+            "clues": [
+              "Mercury",
+              "Gemini",
+              "Apollo",
+              "Artemis"
+            ]
+          },
+          "hard": false,
+          "isDemo": false,
+          "memoryTime": 10,
+          "answerTime": 30,
+          "scoringRule": "bank-v2",
+          "lockAfterAttempt": false,
+          "instructions": " Clues arrive one at a time. Earlier correct answers earn 40 / 30 / 20 / 10 points. Existing retry rules apply."
+        },
+        {
+          "id": "r3-q3",
+          "prompt": "What connects all four clues?",
+          "answerType": "text",
+          "options": [],
+          "acceptedAnswers": [
+            "Fruit names used by technology brands/products",
+            "Fruit names",
+            "Fruit technology brands"
+          ],
+          "data": {
+            "clues": [
+              "Apple",
+              "BlackBerry",
+              "Raspberry",
+              "Orange"
+            ]
+          },
+          "hard": false,
+          "isDemo": false,
+          "memoryTime": 10,
+          "answerTime": 30,
+          "scoringRule": "bank-v2",
+          "lockAfterAttempt": false,
+          "instructions": " Clues arrive one at a time. Earlier correct answers earn 40 / 30 / 20 / 10 points. Existing retry rules apply."
+        },
+        {
+          "id": "r3-q4",
+          "prompt": "What connects all four clues?",
+          "answerType": "text",
+          "options": [],
+          "acceptedAnswers": [
+            "Scientists whose names are tied to electrical/scientific units",
+            "Scientists named after units",
+            "Scientists associated with scientific units"
+          ],
+          "data": {
+            "clues": [
+              "Tesla",
+              "Faraday",
+              "Watt",
+              "Hertz"
+            ]
+          },
+          "hard": false,
+          "isDemo": false,
+          "memoryTime": 10,
+          "answerTime": 30,
+          "scoringRule": "bank-v2",
+          "lockAfterAttempt": false,
+          "instructions": " Clues arrive one at a time. Earlier correct answers earn 40 / 30 / 20 / 10 points. Existing retry rules apply."
+        },
+        {
+          "id": "r3-q5",
+          "prompt": "What connects all four clues?",
+          "answerType": "text",
+          "options": [],
+          "acceptedAnswers": [
+            "Programming languages"
+          ],
+          "data": {
+            "clues": [
+              "Python",
+              "Ruby",
+              "Swift",
+              "Rust"
+            ]
+          },
+          "hard": false,
+          "isDemo": false,
+          "memoryTime": 10,
+          "answerTime": 30,
+          "scoringRule": "bank-v2",
+          "lockAfterAttempt": false,
+          "instructions": " Clues arrive one at a time. Earlier correct answers earn 40 / 30 / 20 / 10 points. Existing retry rules apply."
+        },
+        {
+          "id": "r3-q6",
+          "prompt": "What connects all four clues?",
+          "answerType": "text",
+          "options": [],
+          "acceptedAnswers": [
+            "HTTP status codes"
+          ],
+          "data": {
+            "clues": [
+              "200",
+              "301",
+              "404",
+              "500"
+            ]
+          },
+          "hard": false,
+          "isDemo": false,
+          "memoryTime": 10,
+          "answerTime": 30,
+          "scoringRule": "bank-v2",
+          "lockAfterAttempt": false,
+          "instructions": " Clues arrive one at a time. Earlier correct answers earn 40 / 30 / 20 / 10 points. Existing retry rules apply."
+        }
+      ]
+    },
+    {
+      "gameType": "target",
+      "questions": [
+        {
+          "id": "r4-demo",
+          "prompt": "Build a valid expression that reaches the target.",
+          "answerType": "expression",
+          "options": [],
+          "acceptedAnswers": [],
+          "data": {
+            "target": 24,
+            "numbers": [
+              8,
+              6,
+              4,
+              2
+            ],
+            "operators": [
+              "+",
+              "-",
+              "*",
+              "/"
+            ],
+            "useAllNumbers": true,
+            "exampleSolution": "8 × 4 - 6 - 2"
+          },
+          "hard": false,
+          "isDemo": true,
+          "memoryTime": 10,
+          "answerTime": 45,
+          "scoringRule": "bank-v2",
+          "lockAfterAttempt": false,
+          "instructions": "Practice only: try the interaction, then continue to Question 1. Use every supplied number exactly once with +, −, ×, ÷ and parentheses. Exact earns 40. If nobody is exact, closest valid teams rank 30 / 20 / 10."
+        },
+        {
+          "id": "r4-q1",
+          "prompt": "Build a valid expression that reaches the target.",
+          "answerType": "expression",
+          "options": [],
+          "acceptedAnswers": [],
+          "data": {
+            "target": 73,
+            "numbers": [
+              9,
+              8,
+              7,
+              4,
+              2
+            ],
+            "operators": [
+              "+",
+              "-",
+              "*",
+              "/"
+            ],
+            "useAllNumbers": true,
+            "exampleSolution": "(9 + 8) + (2 × 7 × 4)"
+          },
+          "hard": false,
+          "isDemo": false,
+          "memoryTime": 10,
+          "answerTime": 45,
+          "scoringRule": "bank-v2",
+          "lockAfterAttempt": false,
+          "instructions": " Use every supplied number exactly once with +, −, ×, ÷ and parentheses. Exact earns 40. If nobody is exact, closest valid teams rank 30 / 20 / 10."
+        },
+        {
+          "id": "r4-q2",
+          "prompt": "Build a valid expression that reaches the target.",
+          "answerType": "expression",
+          "options": [],
+          "acceptedAnswers": [],
+          "data": {
+            "target": 96,
+            "numbers": [
+              12,
+              9,
+              7,
+              5,
+              3
+            ],
+            "operators": [
+              "+",
+              "-",
+              "*",
+              "/"
+            ],
+            "useAllNumbers": true,
+            "exampleSolution": "(12 - 9) × ((7 × 5) - 3)"
+          },
+          "hard": false,
+          "isDemo": false,
+          "memoryTime": 10,
+          "answerTime": 45,
+          "scoringRule": "bank-v2",
+          "lockAfterAttempt": false,
+          "instructions": " Use every supplied number exactly once with +, −, ×, ÷ and parentheses. Exact earns 40. If nobody is exact, closest valid teams rank 30 / 20 / 10."
+        },
+        {
+          "id": "r4-q3",
+          "prompt": "Build a valid expression that reaches the target.",
+          "answerType": "expression",
+          "options": [],
+          "acceptedAnswers": [],
+          "data": {
+            "target": 101,
+            "numbers": [
+              10,
+              9,
+              7,
+              6,
+              3
+            ],
+            "operators": [
+              "+",
+              "-",
+              "*",
+              "/"
+            ],
+            "useAllNumbers": true,
+            "exampleSolution": "(6 × 3) - (7 - (10 × 9))"
+          },
+          "hard": false,
+          "isDemo": false,
+          "memoryTime": 10,
+          "answerTime": 45,
+          "scoringRule": "bank-v2",
+          "lockAfterAttempt": false,
+          "instructions": " Use every supplied number exactly once with +, −, ×, ÷ and parentheses. Exact earns 40. If nobody is exact, closest valid teams rank 30 / 20 / 10."
+        },
+        {
+          "id": "r4-q4",
+          "prompt": "Build a valid expression that reaches the target.",
+          "answerType": "expression",
+          "options": [],
+          "acceptedAnswers": [],
+          "data": {
+            "target": 118,
+            "numbers": [
+              15,
+              12,
+              8,
+              5,
+              4
+            ],
+            "operators": [
+              "+",
+              "-",
+              "*",
+              "/"
+            ],
+            "useAllNumbers": true,
+            "exampleSolution": "(12 ÷ 4) + 5 × (15 + 8)"
+          },
+          "hard": false,
+          "isDemo": false,
+          "memoryTime": 10,
+          "answerTime": 45,
+          "scoringRule": "bank-v2",
+          "lockAfterAttempt": false,
+          "instructions": " Use every supplied number exactly once with +, −, ×, ÷ and parentheses. Exact earns 40. If nobody is exact, closest valid teams rank 30 / 20 / 10."
+        },
+        {
+          "id": "r4-q5",
+          "prompt": "Build a valid expression that reaches the target.",
+          "answerType": "expression",
+          "options": [],
+          "acceptedAnswers": [],
+          "data": {
+            "target": 121,
+            "numbers": [
+              14,
+              13,
+              8,
+              5,
+              3
+            ],
+            "operators": [
+              "+",
+              "-",
+              "*",
+              "/"
+            ],
+            "useAllNumbers": true,
+            "exampleSolution": "(8 × 5) + 3 × (14 + 13)"
+          },
+          "hard": false,
+          "isDemo": false,
+          "memoryTime": 10,
+          "answerTime": 45,
+          "scoringRule": "bank-v2",
+          "lockAfterAttempt": false,
+          "instructions": " Use every supplied number exactly once with +, −, ×, ÷ and parentheses. Exact earns 40. If nobody is exact, closest valid teams rank 30 / 20 / 10."
+        },
+        {
+          "id": "r4-q6",
+          "prompt": "Build a valid expression that reaches the target.",
+          "answerType": "expression",
+          "options": [],
+          "acceptedAnswers": [],
+          "data": {
+            "target": 130,
+            "numbers": [
+              17,
+              10,
+              7,
+              4,
+              2
+            ],
+            "operators": [
+              "+",
+              "-",
+              "*",
+              "/"
+            ],
+            "useAllNumbers": true,
+            "exampleSolution": "2 × ((17 × 4) - (10 - 7))"
+          },
+          "hard": false,
+          "isDemo": false,
+          "memoryTime": 10,
+          "answerTime": 45,
+          "scoringRule": "bank-v2",
+          "lockAfterAttempt": false,
+          "instructions": " Use every supplied number exactly once with +, −, ×, ÷ and parentheses. Exact earns 40. If nobody is exact, closest valid teams rank 30 / 20 / 10."
+        }
+      ]
+    },
+    {
+      "gameType": "drawing",
+      "questions": [
+        {
+          "id": "r5-demo",
+          "prompt": "Robot",
+          "answerType": "text",
+          "options": [],
+          "acceptedAnswers": [
+            "Robot"
+          ],
+          "data": {},
+          "hard": false,
+          "isDemo": true,
+          "memoryTime": 10,
+          "answerTime": 45,
+          "scoringRule": "bank-v2",
+          "lockAfterAttempt": false,
+          "instructions": "Practice only: try the interaction, then continue to Question 1. No speaking. No writing the actual word. No letters or numbers. No mouthing the answer or spelling through gestures. Do not show the secret card."
+        },
+        {
+          "id": "r5-q1",
+          "prompt": "Broken Wi-Fi",
+          "answerType": "text",
+          "options": [],
+          "acceptedAnswers": [
+            "Broken Wi-Fi",
+            "Broken WiFi",
+            "Broken Wi Fi"
+          ],
+          "data": {},
+          "hard": false,
+          "isDemo": false,
+          "memoryTime": 10,
+          "answerTime": 45,
+          "scoringRule": "bank-v2",
+          "lockAfterAttempt": false,
+          "instructions": " No speaking. No writing the actual word. No letters or numbers. No mouthing the answer or spelling through gestures. Do not show the secret card."
+        },
+        {
+          "id": "r5-q2",
+          "prompt": "Traffic Jam",
+          "answerType": "text",
+          "options": [],
+          "acceptedAnswers": [
+            "Traffic Jam"
+          ],
+          "data": {},
+          "hard": false,
+          "isDemo": false,
+          "memoryTime": 10,
+          "answerTime": 45,
+          "scoringRule": "bank-v2",
+          "lockAfterAttempt": false,
+          "instructions": " No speaking. No writing the actual word. No letters or numbers. No mouthing the answer or spelling through gestures. Do not show the secret card."
+        },
+        {
+          "id": "r5-q3",
+          "prompt": "Cloud Computing",
+          "answerType": "text",
+          "options": [],
+          "acceptedAnswers": [
+            "Cloud Computing"
+          ],
+          "data": {},
+          "hard": false,
+          "isDemo": false,
+          "memoryTime": 10,
+          "answerTime": 45,
+          "scoringRule": "bank-v2",
+          "lockAfterAttempt": false,
+          "instructions": " No speaking. No writing the actual word. No letters or numbers. No mouthing the answer or spelling through gestures. Do not show the secret card."
+        },
+        {
+          "id": "r5-q4",
+          "prompt": "Password Reset",
+          "answerType": "text",
+          "options": [],
+          "acceptedAnswers": [
+            "Password Reset"
+          ],
+          "data": {},
+          "hard": false,
+          "isDemo": false,
+          "memoryTime": 10,
+          "answerTime": 45,
+          "scoringRule": "bank-v2",
+          "lockAfterAttempt": false,
+          "instructions": " No speaking. No writing the actual word. No letters or numbers. No mouthing the answer or spelling through gestures. Do not show the secret card."
+        },
+        {
+          "id": "r5-q5",
+          "prompt": "Bug in Production",
+          "answerType": "text",
+          "options": [],
+          "acceptedAnswers": [
+            "Bug in Production"
+          ],
+          "data": {},
+          "hard": false,
+          "isDemo": false,
+          "memoryTime": 10,
+          "answerTime": 45,
+          "scoringRule": "bank-v2",
+          "lockAfterAttempt": false,
+          "instructions": " No speaking. No writing the actual word. No letters or numbers. No mouthing the answer or spelling through gestures. Do not show the secret card."
+        },
+        {
+          "id": "r5-q6",
+          "prompt": "Monday Morning Meeting",
+          "answerType": "text",
+          "options": [],
+          "acceptedAnswers": [
+            "Monday Morning Meeting"
+          ],
+          "data": {},
+          "hard": false,
+          "isDemo": false,
+          "memoryTime": 10,
+          "answerTime": 45,
+          "scoringRule": "bank-v2",
+          "lockAfterAttempt": false,
+          "instructions": " No speaking. No writing the actual word. No letters or numbers. No mouthing the answer or spelling through gestures. Do not show the secret card."
+        }
+      ]
+    },
+    {
+      "gameType": "technical",
+      "questions": [
+        {
+          "id": "r6-demo",
+          "prompt": "Which HTTP status code means “Not Found”?",
+          "answerType": "mcq",
+          "options": [
+            "200",
+            "301",
+            "404",
+            "500"
+          ],
+          "acceptedAnswers": [
+            "404"
+          ],
+          "data": {
+            "code": ""
+          },
+          "hard": false,
+          "isDemo": true,
+          "memoryTime": 10,
+          "answerTime": 20,
+          "scoringRule": "bank-v2",
+          "lockAfterAttempt": true,
+          "instructions": "Practice only: try the interaction, then continue to Question 1. Select one answer. Your team answer locks after submission."
+        },
+        {
+          "id": "r6-q1",
+          "prompt": "What is the output of this Python code?",
+          "answerType": "mcq",
+          "options": [
+            "[18, 12]",
+            "[15, 9]",
+            "[15, 12, 9]",
+            "[18, 15, 12]"
+          ],
+          "acceptedAnswers": [
+            "[15, 9]"
+          ],
+          "data": {
+            "code": "x = [3, 6, 9, 12, 15, 18]\nprint(x[-2:0:-2])"
+          },
+          "hard": false,
+          "isDemo": false,
+          "memoryTime": 10,
+          "answerTime": 20,
+          "scoringRule": "bank-v2",
+          "lockAfterAttempt": true,
+          "instructions": " Select one answer. Your team answer locks after submission."
+        },
+        {
+          "id": "r6-q2",
+          "prompt": "Which department is returned by the SQL query?",
+          "answerType": "mcq",
+          "options": [
+            "Engineering only",
+            "HR only",
+            "Engineering and HR",
+            "Engineering and Sales"
+          ],
+          "acceptedAnswers": [
+            "Engineering only"
+          ],
+          "data": {
+            "code": "Employees after WHERE salary > 50000:\nEngineering: 70000\nEngineering: 65000\nHR: 60000\nSales: 75000\n\nSELECT department\nFROM employees\nWHERE salary > 50000\nGROUP BY department\nHAVING COUNT(*) >= 2;"
+          },
+          "hard": false,
+          "isDemo": false,
+          "memoryTime": 10,
+          "answerTime": 20,
+          "scoringRule": "bank-v2",
+          "lockAfterAttempt": true,
+          "instructions": " Select one answer. Your team answer locks after submission."
+        },
+        {
+          "id": "r6-q3",
+          "prompt": "What is the network address of 192.168.10.77/26?",
+          "answerType": "mcq",
+          "options": [
+            "192.168.10.0/26",
+            "192.168.10.64/26",
+            "192.168.10.77/26",
+            "192.168.10.128/26"
+          ],
+          "acceptedAnswers": [
+            "192.168.10.64/26"
+          ],
+          "data": {
+            "code": ""
+          },
+          "hard": false,
+          "isDemo": false,
+          "memoryTime": 10,
+          "answerTime": 20,
+          "scoringRule": "bank-v2",
+          "lockAfterAttempt": true,
+          "instructions": " Select one answer. Your team answer locks after submission."
+        },
+        {
+          "id": "r6-q4",
+          "prompt": "After running `git reset --soft HEAD~1`, what happens?",
+          "answerType": "mcq",
+          "options": [
+            "The last commit is removed and its changes stay staged",
+            "The last commit and changes are deleted",
+            "The working tree is reset but the commit stays",
+            "Only untracked files are removed"
+          ],
+          "acceptedAnswers": [
+            "The last commit is removed and its changes stay staged"
+          ],
+          "data": {
+            "code": ""
+          },
+          "hard": false,
+          "isDemo": false,
+          "memoryTime": 10,
+          "answerTime": 20,
+          "scoringRule": "bank-v2",
+          "lockAfterAttempt": true,
+          "instructions": " Select one answer. Your team answer locks after submission."
+        },
+        {
+          "id": "r6-q5",
+          "prompt": "Which request is idempotent by standard HTTP semantics?",
+          "answerType": "mcq",
+          "options": [
+            "POST /orders to create a new order",
+            "PUT /users/42 with the full user representation",
+            "POST /payments to charge a card",
+            "PATCH /counter with “increment by 1”"
+          ],
+          "acceptedAnswers": [
+            "PUT /users/42 with the full user representation"
+          ],
+          "data": {
+            "code": ""
+          },
+          "hard": false,
+          "isDemo": false,
+          "memoryTime": 10,
+          "answerTime": 20,
+          "scoringRule": "bank-v2",
+          "lockAfterAttempt": true,
+          "instructions": " Select one answer. Your team answer locks after submission."
+        },
+        {
+          "id": "r6-q6",
+          "prompt": "A classifier has TP=42, FP=8, FN=18. What is its F1 score (approximately)?",
+          "answerType": "mcq",
+          "options": [
+            "70.0%",
+            "76.4%",
+            "84.0%",
+            "91.3%"
+          ],
+          "acceptedAnswers": [
+            "76.4%"
+          ],
+          "data": {
+            "code": ""
+          },
+          "hard": true,
+          "isDemo": false,
+          "memoryTime": 10,
+          "answerTime": 30,
+          "scoringRule": "bank-v2",
+          "lockAfterAttempt": true,
+          "instructions": " Select one answer. Your team answer locks after submission."
+        }
+      ]
+    }
+  ]
+}

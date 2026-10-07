@@ -1,0 +1,194 @@
+.app.lobby-shell {
+  background: radial-gradient(ellipse at 50% 40%, #fff 12%, #f4f7fd 100%);
+  padding: 64px 0;
+  color: #090920;
+}
+
+.page.illustrated-lobby {
+  --lobby-muted: #515b7e;
+  flex: none;
+  width: min(1356px, calc(100% - 88px));
+  max-width: 1356px;
+  margin: auto;
+  padding: 40px 42px 22px;
+  text-align: left;
+  background: #ffffffeb;
+  border: 1px solid #fff;
+  border-radius: 24px;
+  box-shadow: 0 16px 60px #233f7010;
+}
+
+.lobby-brand-row { display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+.lobby-brand { display: inline-flex; align-items: center; gap: 15px; font-family: 'Outfit', sans-serif; font-size: 48px; font-weight: 800; letter-spacing: -2px; line-height: 1.25; }
+.lobby-brand-mark { position: relative; display: block; width: 64px; height: 68px; flex-shrink: 0; }
+.lobby-brand-mark i { position: absolute; display: block; border-radius: 50%; }
+.lobby-brand-mark i:nth-child(1) { width: 31px; height: 31px; background: #ffb62c; right: 0; top: 0; }
+.lobby-brand-mark i:nth-child(2) { width: 35px; height: 35px; background: #358bff; left: 11px; top: 23px; }
+.lobby-brand-mark i:nth-child(3) { width: 31px; height: 31px; background: #ca1fcb; right: 0; bottom: 1px; }
+.lobby-brand-mark i:nth-child(4) { width: 24px; height: 24px; background: #248aff; left: 3px; top: 12px; }
+.lobby-brand-mark i:nth-child(5) { width: 24px; height: 24px; background: #0064ff; left: 3px; bottom: 4px; }
+.lobby-brand-row .icon-button { min-width: 44px; min-height: 44px; background: #f4f6fc; }
+
+.lobby-intro { display: flex; align-items: center; justify-content: space-between; gap: 28px; margin: 40px 0 28px; }
+.lobby-intro-copy { min-width: 0; }
+.lobby-intro h1 { font-size: clamp(32px, 3.7vw, 54px); font-weight: 800; letter-spacing: -.045em; line-height: 1.1; text-wrap: balance; }
+.lobby-intro p { margin-top: 9px; color: var(--lobby-muted); font-size: clamp(16px, 1.95vw, 28px); line-height: 1.35; letter-spacing: -.025em; }
+.lobby-stats { display: flex; align-items: center; gap: 16px; flex-shrink: 0; }
+.lobby-live { display: inline-flex; align-items: center; gap: 11px; padding: 22px; background: #eafaf0; color: #06611c; border-radius: 18px; font-size: 21px; font-weight: 800; white-space: nowrap; }
+.lobby-live > span { width: 25px; height: 25px; border: 8px solid #059333; border-radius: 50%; background: #65f2a7; flex-shrink: 0; }
+.lobby-count { display: flex; align-items: center; gap: 20px; padding: 19px 25px; background: #f0f4fe; border-radius: 18px; }
+.lobby-count > svg { width: 40px; height: 40px; color: #555f80; fill: #555f8029; }
+.lobby-count > div { display: grid; gap: 1px; }
+.lobby-count strong { font-family: 'Outfit', sans-serif; font-size: 32px; font-weight: 800; white-space: nowrap; line-height: 1.15; }
+.lobby-count > div > span { color: var(--lobby-muted); white-space: nowrap; font-size: 16px; }
+
+.lobby-waiting { display: flex; align-items: center; gap: 25px; background: #fff5dc; border-radius: 20px; padding: 15px 26px; }
+.lobby-clock { flex-shrink: 0; display: grid; place-items: center; width: 64px; height: 64px; color: #fff2c0; background: linear-gradient(145deg, #ffcc58, #ffb735); border-radius: 50%; box-shadow: inset 0 0 0 1px #efa31b30; }
+.lobby-clock svg { width: 37px; height: 37px; fill: #a95300; stroke-width: 2.5px; stroke: #fff2c0; border-radius: 50%; background: #a95300; }
+.lobby-waiting strong { font-size: clamp(18px, 1.95vw, 27px); font-weight: 800; color: #59260d; letter-spacing: -.025em; line-height: 1.3; }
+.lobby-waiting p { font-size: clamp(15px, 1.6vw, 22px); color: #697387; line-height: 1.4; margin-top: 3px; }
+
+.lobby-team-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px; padding: 0 16px; margin-top: 6px; }
+.lobby-mascot-team { position: relative; isolation: isolate; min-width: 0; padding: 0 0 18px; display: flex; flex-direction: column; align-items: center; }
+.lobby-card-backdrop { position: absolute; z-index: -1; inset: 27% 0 0; border-radius: 28px; overflow: hidden; background: var(--card-background); box-shadow: 0 16px 24px #26365017; }
+.lobby-mascot-team.coral { --card-background: linear-gradient(130deg, #ff6770 0%, #ff3a42 60%, #ff555c 100%); --card-spot: #ff969b55; --card-count: #c91c2ee6; }
+.lobby-mascot-team.blue { --card-background: linear-gradient(125deg, #008bff 0%, #0061f3 66%, #0875ff 100%); --card-spot: #369bff70; --card-count: #004cc3; }
+.lobby-mascot-team.green { --card-background: linear-gradient(140deg, #52ce55 0%, #289641 66%, #3fc653 100%); --card-spot: #74e56750; --card-count: #156d2b; }
+.lobby-card-backdrop::before, .lobby-card-backdrop::after { content: ''; position: absolute; width: 64%; height: 64%; background: var(--card-spot); border-radius: 35% 48% 39% 60%; transform: rotate(35deg); }
+.lobby-card-backdrop::before { left: -35%; bottom: -20%; box-shadow: 48px -148px 0 -15px var(--card-spot); }
+.lobby-card-backdrop::after { right: -42%; bottom: -22%; box-shadow: -46px -172px 0 -12px var(--card-spot); }
+.lobby-mascot { width: 106%; max-width: none; aspect-ratio: 1; height: auto; object-fit: contain; display: block; margin-bottom: -18px; user-select: none; filter: drop-shadow(0 10px 10px #27364e17); }
+.lobby-team-info { position: relative; display: flex; flex-direction: column; align-items: center; width: 100%; min-height: 134px; padding: 0 8px; color: #fff; }
+.lobby-team-info h2 { font-size: clamp(24px, 3vw, 43px); font-weight: 750; letter-spacing: -.025em; line-height: 1.2; white-space: nowrap; text-shadow: 0 1px 1px #00000020; }
+.lobby-team-count { display: inline-flex; align-items: center; justify-content: center; gap: 17px; padding: 4px 25px; margin-top: 9px; font-weight: 800; font-size: 24px; line-height: 1.35; border-radius: 30px; background: var(--card-count); }
+.lobby-team-count svg { width: 29px; height: 29px; fill: #ffffff35; }
+.lobby-your-team { display: inline-flex; align-items: center; justify-content: center; gap: 9px; padding: 5px 19px; margin-top: 10px; border-radius: 30px; background: #fff0ac; color: #682a00; font-size: 18px; font-weight: 800; line-height: 1.4; }
+.lobby-your-team svg { color: #ed8d00; }
+
+.lobby-player-details { margin: 22px 16px 0; color: var(--lobby-muted); }
+.lobby-player-details > summary { list-style: none; min-height: 44px; display: flex; align-items: center; justify-content: space-between; cursor: pointer; font-size: 14px; font-weight: 600; border-radius: 8px; }
+.lobby-player-details > summary::-webkit-details-marker { display: none; }
+.lobby-player-details > summary > span { display: inline-flex; align-items: center; gap: 9px; }
+.lobby-roster-count { display: inline-grid; place-items: center; min-width: 25px; height: 25px; padding: 0 6px; background: #edf1fa; border-radius: 8px; }
+.lobby-player-details[open] > summary > svg { transform: rotate(180deg); }
+.lobby-player-details > summary:focus-visible { outline: 3px solid #126bf6; outline-offset: 4px; }
+.illustrated-lobby .crew-roster { margin: 12px 0 0; color: #252b45; border-color: #e4e9f3; background: #fcfdff; }
+.illustrated-lobby .crew-roster-header p, .illustrated-lobby .crew-arrival { color: var(--lobby-muted); font-size: 13px; }
+.illustrated-lobby .crew-people li > div > span { font-size: 12px; }
+.illustrated-lobby .lobby-start { text-align: center; margin: 25px 16px 6px; padding-top: 25px; border-top: 1px solid #e4e9f3; }
+.lobby-shell .global-error { margin: 0 auto 24px; width: min(1272px, calc(100% - 88px)); }
+
+@media (max-width: 1250px) {
+  .app.lobby-shell { padding: 40px 0; }
+  .page.illustrated-lobby { width: calc(100% - 56px); padding: 32px 30px 20px; }
+  .lobby-intro { flex-wrap: wrap; gap: 22px; margin-top: 30px; }
+  .lobby-intro h1 { font-size: 46px; }
+  .lobby-intro p { font-size: 23px; }
+  .lobby-stats { flex: 1; }
+  .lobby-live { padding: 16px 20px; font-size: 18px; }
+  .lobby-count { padding: 13px 20px; gap: 15px; }
+  .lobby-count strong { font-size: 27px; }
+  .lobby-count > svg { width: 32px; height: 32px; }
+  .lobby-count > div > span { font-size: 14px; }
+  .lobby-team-grid { gap: 24px; padding: 0; }
+  .lobby-team-info h2 { font-size: clamp(22px, 3vw, 36px); }
+  .lobby-team-count { font-size: 21px; gap: 12px; padding: 4px 20px; }
+  .lobby-team-info { min-height: 123px; }
+  .lobby-player-details { margin-right: 0; margin-left: 0; }
+}
+
+@media (max-width: 700px) {
+  .app.lobby-shell { padding: 18px 0; }
+  .page.illustrated-lobby { width: calc(100% - 28px); padding: 25px 20px 15px; border-radius: 20px; }
+  .lobby-brand { font-size: 35px; gap: 10px; letter-spacing: -1.5px; }
+  .lobby-brand-mark { transform: scale(.75); transform-origin: left center; width: 49px; margin-right: 0; height: 54px; }
+  .lobby-intro { margin: 24px 0 20px; gap: 20px; }
+  .lobby-intro h1 { font-size: clamp(31px, 6.3vw, 43px); letter-spacing: -.035em; }
+  .lobby-intro p { font-size: 17px; margin-top: 10px; max-width: 390px; line-height: 1.5; }
+  .lobby-stats { gap: 10px; width: 100%; }
+  .lobby-live { padding: 15px 13px; gap: 8px; font-size: 15px; border-radius: 13px; flex: 1; justify-content: center; }
+  .lobby-live > span { width: 19px; height: 19px; border-width: 6px; }
+  .lobby-count { gap: 10px; padding: 11px 13px; border-radius: 13px; flex: 1; justify-content: center; }
+  .lobby-count > svg { width: 27px; height: 27px; }
+  .lobby-count strong { font-size: 24px; }
+  .lobby-count > div > span { font-size: 12px; }
+  .lobby-waiting { padding: 16px; gap: 13px; border-radius: 15px; }
+  .lobby-clock { width: 43px; height: 43px; }
+  .lobby-clock svg { width: 27px; height: 27px; }
+  .lobby-waiting strong { font-size: 17px; line-height: 1.35; display: block; }
+  .lobby-waiting p { font-size: 13px; margin-top: 5px; }
+  .lobby-team-grid { grid-template-columns: 1fr; gap: 18px; margin: 10px auto 0; max-width: 380px; }
+  .lobby-mascot { width: 103%; margin-bottom: -20px; }
+  .lobby-team-info h2 { font-size: 35px; }
+  .lobby-team-info { min-height: 132px; }
+  .lobby-team-count { font-size: 23px; }
+  .lobby-your-team { font-size: 17px; }
+  .illustrated-lobby .crew-roster { padding: 17px; }
+  .illustrated-lobby .crew-roster-header { gap: 16px; }
+  .illustrated-lobby .lobby-start { margin-right: 0; margin-left: 0; }
+  .lobby-brand-row .header-right { gap: 8px; }
+  .lobby-shell .global-error { width: calc(100% - 28px); }
+}
+
+@media (max-width: 360px) {
+  .page.illustrated-lobby { padding-right: 16px; padding-left: 16px; }
+  .lobby-stats { gap: 8px; }
+  .lobby-live { padding: 15px 9px; font-size: 13px; }
+  .lobby-count { gap: 6px; padding: 11px 9px; }
+  .lobby-count > svg { width: 23px; }
+  .lobby-count strong { font-size: 21px; }
+  .lobby-count > div > span { font-size: 11px; }
+  .lobby-team-info h2 { font-size: 31px; }
+  .lobby-brand { font-size: 30px; }
+  .lobby-brand-row { gap: 8px; }
+}
+
+/* Size the desktop lobby from the viewport, including the artwork. */
+@media (min-width: 1000px) {
+  .app.lobby-shell { padding: 20px 0; }
+  .page.illustrated-lobby {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 48px);
+    max-width: none;
+    height: calc(100dvh - 40px);
+    margin: 0 auto;
+    padding: clamp(20px, 3dvh, 40px) clamp(24px, 3vw, 60px) 12px;
+  }
+  .lobby-brand-row, .lobby-intro, .lobby-waiting, .lobby-player-details, .illustrated-lobby .lobby-start { flex-shrink: 0; }
+  .lobby-brand { font-size: clamp(32px, 4.5dvh, 48px); }
+  .lobby-brand-mark { width: 56px; height: 62px; }
+  .lobby-intro { flex-wrap: nowrap; gap: 24px; margin: clamp(16px, 3dvh, 38px) 0 clamp(16px, 2.5dvh, 28px); }
+  .lobby-intro h1 { font-size: clamp(32px, 2.8vw, 58px); }
+  .lobby-intro p { font-size: clamp(17px, 1.6vw, 28px); }
+  .lobby-stats { flex: none; gap: 14px; }
+  .lobby-live { padding: clamp(14px, 2dvh, 22px) 20px; font-size: clamp(16px, 1.25vw, 21px); }
+  .lobby-count { padding: clamp(12px, 1.8dvh, 19px) 22px; gap: 16px; }
+  .lobby-count strong { font-size: clamp(26px, 2vw, 34px); }
+  .lobby-count > div > span { font-size: 14px; }
+  .lobby-count > svg { width: 34px; height: 34px; }
+  .lobby-waiting { padding: clamp(10px, 1.3dvh, 16px) 24px; gap: 20px; }
+  .lobby-clock { width: clamp(44px, 6dvh, 64px); height: clamp(44px, 6dvh, 64px); }
+  .lobby-waiting strong { font-size: clamp(18px, 1.55vw, 27px); }
+  .lobby-waiting p { font-size: clamp(15px, 1.25vw, 22px); }
+  .lobby-team-grid { flex: 1; min-height: 0; gap: clamp(24px, 2.3vw, 46px); padding: 0 12px; margin: 10px 0 0; }
+  .lobby-mascot-team { display: grid; grid-template-rows: minmax(0, 1fr) auto; justify-items: center; align-items: stretch; min-height: 0; padding-bottom: 14px; }
+  .lobby-mascot { width: 100%; height: 100%; min-height: 0; max-height: 100%; aspect-ratio: auto; margin: 0; }
+  .lobby-team-info { min-height: clamp(108px, 12dvh, 138px); padding: 0 8px; }
+  .lobby-team-info h2 { font-size: clamp(27px, 2.4vw, 46px); }
+  .lobby-team-count { margin-top: 7px; font-size: clamp(20px, 1.6vw, 27px); padding: 3px 24px; }
+  .lobby-team-count svg { width: 26px; height: 26px; }
+  .lobby-your-team { margin-top: 7px; padding: 4px 18px; font-size: clamp(15px, 1.1vw, 19px); }
+  .lobby-player-details { margin: 10px 12px 0; }
+  .illustrated-lobby .lobby-start { margin: 10px 12px 0; padding-top: 12px; }
+  .lobby-shell .global-error { width: calc(100% - 48px); }
+
+  /* Opening the roster should scroll naturally instead of squeezing the cards. */
+  .page.illustrated-lobby:has(.lobby-player-details[open]) { height: auto; min-height: calc(100dvh - 40px); }
+  .illustrated-lobby:has(.lobby-player-details[open]) .lobby-team-grid { flex: none; height: clamp(280px, 47dvh, 780px); }
+}
+
+@media (min-width: 1000px) and (max-height: 650px) {
+  .page.illustrated-lobby { height: auto; min-height: calc(100dvh - 40px); }
+  .lobby-team-grid { flex: none; height: 300px; }
+}
