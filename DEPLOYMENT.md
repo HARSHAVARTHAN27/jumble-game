@@ -63,3 +63,9 @@ The updated configuration now defaults to `SameSite=None` automatically outside 
 These files prepare deployment but do not update existing Render or Vercel dashboard settings. Apply the settings above and redeploy the changed repository. Exact diagnosis needs the live URLs and the failed Render deployment's log.
 
 References: [Render FastAPI deployment](https://render.com/docs/deploy-fastapi), [Vercel Vite deployment](https://vercel.com/docs/frameworks/frontend/vite).
+
+## Intermittent Supabase read failures
+
+If Render logs show `httpcore/_sync/http2.py` followed by `ReadError: [Errno 11] Resource temporarily unavailable`, deploy the updated backend database client. It supplies a shared HTTP/1.1 transport to Supabase, bounded connection timeouts, and one retry for interrupted GET/HEAD reads. Writes and RPCs are not replayed after read failures. Persistent transport failures return HTTP 503 with `DATABASE_UNAVAILABLE`; host authentication transport failures retain this temporary status rather than reporting invalid credentials.
+
+This change requires redeploying the backend code; no new environment variable or frontend build is required. After deployment, check player state and host requests in addition to `/health`, and inspect Render logs for recurring transport failures.

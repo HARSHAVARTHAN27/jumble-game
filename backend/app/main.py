@@ -4,6 +4,7 @@ from fastapi.responses import JSONResponse
 from postgrest.exceptions import APIError
 from contextlib import asynccontextmanager, suppress
 import asyncio
+import httpx
 from .routers.live import host_router as live_host_router, player_router as live_player_router, socket_router, deadline_worker
 from .routers.game import router as game_router
 from .routers.host import router as host_router
@@ -52,6 +53,7 @@ app.add_middleware(
 @app.exception_handler(Exception)
 @app.exception_handler(AppError)
 @app.exception_handler(APIError)
+@app.exception_handler(httpx.TransportError)
 async def global_exception_handler(request, exc):
     from .exceptions import AppError
     # Check if it's our custom AppError
@@ -78,6 +80,15 @@ async def global_exception_handler(request, exc):
                     "message": "Database setup is incomplete. Configure DATABASE_URL and restart the backend with AUTO_MIGRATE=true. For manual setup, see backend/README.md.",
                 },
             },
+        )
+    if isinstance(exc, httpx.TransportError):
+        return JSONResponse(
+            status_code=503,
+            headers={"Retry-After": "2"},
+            content={"success": False, "data": None, "error": {
+                "code": "DATABASE_UNAVAILABLE",
+                "message": "The game server temporarily cannot reach the database. Please try again.",
+            }},
         )
     # Generic error: do not send database details or stack traces to players.
     return JSONResponse(

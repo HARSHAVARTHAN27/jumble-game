@@ -4,6 +4,7 @@ import hashlib
 import hmac
 import json
 import time
+import httpx
 from fastapi import Depends, Request
 from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
 from app.config import settings
@@ -19,6 +20,9 @@ def require_host(credentials: HTTPAuthorizationCredentials | None = Depends(bear
         raise UNAUTHORIZED_HOST()
     try:
         user = supabase.auth.get_user(credentials.credentials).user
+    except httpx.TransportError:
+        # Connection failures are handled as temporary 503s, not invalid logins.
+        raise
     except Exception:
         raise UNAUTHORIZED_HOST() from None
     # app_metadata is administrator managed. Never trust editable user_metadata.
